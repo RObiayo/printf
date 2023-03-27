@@ -1,6 +1,6 @@
 #include "main.h"
 
-void print_buffer(char buffer[], int *buff_ind);
+void print_buffer(char buffer[], int *buff_ind);/*the function prototype, `print_buffer` is declared*/
 
 /**
  * _printf - Printf function
