@@ -1,6 +1,7 @@
 #include "main.h"
 
-void print_buffer(char buffer[], int *buff_ind);/*The function prototype, `print_buffer` is declared and takes two argments, `buffer[]` which is a character array and `*buff_find` which is a pointer to an integer*/
+void print_buffer(char buffer[], int *buff_ind);/*The function prototype, `print_buffer` is declared and takes two arguments,
+`buffer[]` which is a character array and `*buff_find` which is a pointer to an integer*/
 
 /**
  * _printf - Printf function
