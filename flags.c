@@ -31,4 +31,4 @@ int get_flags(const char *format, int *i)/*the `get_flags` function of integer t
 	*i = curr_i - 1;/*Finally, the function sets the value of the integer pointed to by `i` to `curr_i - 1`*/
 
 	return (flags);/*the function returns the `flags` variable as the function's result*/
-	
+}

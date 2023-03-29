@@ -1,4 +1,4 @@
-#include "main.h"// This line includes the header file main.h
+#include "main.h"
 
 /**
  * get_width - Calculates the width for printing
@@ -11,11 +11,11 @@
 int get_width(const char *format, int *i, va_list list)
 {
 	int curr_i;
-	int width = 0;// Define and initialize variables
+	int width = 0;
 
-	for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)// Loop through the formatted string starting at the next index width by 10 and add the value of the digit
+	for (curr_i = *i + 1; format[curr_i] != '\0'; curr_i++)
 	{
-		if (is_digit(format[curr_i]))// If the current character is an asterisk (*), skip to the next character, and set the width to the next argument in the list
+		if (is_digit(format[curr_i]))
 		{
 			width *= 10;
 			width += format[curr_i] - '0';
@@ -27,10 +27,10 @@ int get_width(const char *format, int *i, va_list list)
 			break;
 		}
 		else
-			break;// If the current character is neither a digit nor an asterisk, exit the loop
+			break;
 	}
 
-	*i = curr_i - 1;// Update the current index (i) to the current index minus 1
+	*i = curr_i - 1;
 
-	return (width);// Return the calculated width
+	return (width);
 }
